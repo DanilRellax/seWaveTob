@@ -84,7 +84,7 @@ function sendMainMenu(chatId, username) {
   bot.sendMessage(chatId, `👋🏻 Привет, ${username}!
 
 ⭐️ Я WaveStars и я раздаю звёзды бесплатно! 
-🔥 Приглашай друзей, выполняй задания и обменивай на звёздочки и подарки`, {
+🔥 Приглашай друзей, выполняй задания и обменивай на звёзды!`, {
     reply_markup: {
       keyboard: [
         [{ text: '📓 Профиль' }, { text: '👥 Друзья' }],
