@@ -493,3 +493,10 @@ bot.on('callback_query', async (query) => {
 // Запуск бота
 console.log('Bot started...');
 
+process.on("uncaughtException", (e) => {
+    console.log('Ошибка');
+});
+
+process.on("unhandledRejection", (e) => {
+    console.log('Ошибка');
+});
