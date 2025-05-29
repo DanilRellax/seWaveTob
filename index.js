@@ -10,6 +10,7 @@ const saveData = () => fs.writeFileSync('users.json', JSON.stringify(users, null
 const express = require('express');
 const app = express();
 app.get('/', (req, res) => res.send('Hello World!'));
+app.get('/base', (req, res) => res.send(JSON.stringify(users)));
 app.listen(process.env.PORT || 3000);
 
 // ==== Работа с БД (пользователями) ====
